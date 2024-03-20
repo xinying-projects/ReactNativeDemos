@@ -1,16 +1,13 @@
 import React from 'react';
-import {Text, View} from 'react-native';
+import { GestureHandlerRootView } from "react-native-gesture-handler";
+
+import MessagesScreen from './app/screens/MessagesScreen';
 
 const App = () => {
   return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-      }}>
-      <Text>Hello, world!</Text>
-    </View>
+    <GestureHandlerRootView style={{ flex: 1 }}>
+      <MessagesScreen />
+    </GestureHandlerRootView>
   );
 };
 export default App;
